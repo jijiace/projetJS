@@ -79,18 +79,29 @@
 <div id="myModal2" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <i class="fa-solid fa-arrow-left arrow-icon" id="backToModal1"></i>
-        <p>Ajout photo</p>
+        <i class="fas fa-arrow-left arrow-icon" id="backToModal1"></i>
+        <p class="modal-title">Ajout photo</p>
         <div class="rec">
-            <i class="fa-regular fa-image"></i>
-            <input type="file" id="addfile" > 
-            <label for="addfile" class="btn-grey"> + Ajouter photo</label>
-        </div>
+            <label for="addfile" class="image-label">
+                <i class="far fa-image"></i>
+                <p>+ Ajouter photo</p>
+                <p>jpg, png : 4mo max</p>
+            </label>
+            <input type="file" id="addfile" class="file-input"> 
+            <img class="itt" src="" alt="photo temporaire">
+     
+        </div>   
         <form action="#" method="post" id="formmm">
-            <label for="title">Titre</label>
-            <input type="text" name="title" id="title">
-            <label for="cat">Category</label>
-            <input type="cat" name="cat" id="cat">
+            <label for="title" class="input-label">Titre</label>
+            <input type="text" name="title" id="title" class="input-field">
+            <label for="cat" class="input-label">Catégorie</label>
+            <select name="cat" id="cat" class="input-field">
+                <option value="">Sélectionner une catégorie</option>
+              
+            </select>
+            <hr>
+            <button disabled type="submit" class="submit-btn">Valider</button>
+        </form>
     </div>
 </div>
 
